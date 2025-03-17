@@ -1,0 +1,38 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
+	font-variation-settings: normal;
+	padding: 5px;
+	margin: 5px;
+}
+
+#webname {
+	background-color: #92ad70;
+	color: #ffff
+}
+
+.nav-link {
+	text-decoration: none;
+	color: #4a7c59;
+	margin-right: 15px;
+}
+
+th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: #4a7c59;
+	color: white;
+	width: fit-content;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+form * {
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+}
