@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Husain Raja</title>
+	<meta name="author" content="Husain Raja">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems">
+	<meta name="description" content="Husain Raja Professional Website">
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+	<script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+	<header>
+		<h1 id="webname">Husain Raja</h1>
+		<nav>
+			<a href="../index.html" class="nav-link">Home</a> |
+			<a href="cv.html" class="nav-link">CV</a> |
+			<a href="contact.html" class="nav-link">Contact me</a> |
+			<a href="fun.html" class="nav-link">For fun</a>
+		</nav>
+	</header>
+	<div class="mainLayout">
+		<div class="item1">
+			<h2>Find Me</h2>
+			<iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.366851381772!2d-117.29714008482358!3d33.08126708089189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc0cc1b70fed61%3A0x2c9c6cf898e6bd1!2s1751%20Noma%20Ln%2C%20Encinitas%2C%20CA%2092024!5e0!3m2!1sen!2sus!4v1711240431236!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		<div class="item2">
+			<h2>Contact Me</h2>
+			<form id="contactForm" onsubmit="return validateForm(event)">
+				<div>
+						<label for="name">Your name (required):</label>
+						<input type="text" id="name" name="name" required>
+						<span id="nameError" class="error-message"></span>
+
+						<label for="email">Your email:</label>
+						<input type="email" id="email" name="email" required>
+						<span id="emailError" class="error-message"></span>
+
+						<label for="comment">Your comment:</label>
+						<textarea id="comment" name="comment" rows="4" required></textarea>
+						<span id="commentError" class="error-message"></span>
+				</div>
+				<div id="formStatus" class="form-status"></div>
+				<div>
+						<input type="submit" value="SEND">
+				</div>
+			</form>
+		<table>
+			<tr>
+					<th>Contact Method Description</th>
+			</tr>
+			<tr>
+					<td>Email</td>
+					<td>horaja@andrew.cmu.edu</td>
+			</tr>
+			<tr>
+					<td>Number</td>
+					<td>937-681-6876</td>
+			</tr>
+			<tr>
+					<td>LinkedIn</td>
+					<td><a href="https://www.linkedin.com/in/husain-raja-591406269/" target="_blank">Click Here</a></td>
+			</tr>
+		</table>
+		</div>
+	</div>
+	<footer>
+		<p id="copyYear">designed and coded by Husain Raja &copy;</p>
+	</footer>
+</body>
+</html>

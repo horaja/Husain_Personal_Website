@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Husain Raja</title>
+	<meta name="author" content="Husain Raja">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems">
+	<meta name="description" content="Husain Raja Professional Website">
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+	<script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+	<header>
+		<h1 id="webname">Husain Raja</h1>
+		<nav>
+			<a href="../index.html" class="nav-link">Home</a> |
+			<a href="cv.html" class="nav-link">CV</a> |
+			<a href="contact.html" class="nav-link">Contact me</a> |
+			<a href="fun.html" class="nav-link">For fun</a>
+		</nav>
+	</header>
+	<div class="mainLayout">
+		<div class="item1">
+			<h2>Things I love to do for fun</h2>
+			<!-- <button id="showListBtn" onclick="showList()">Click to see...</button> -->
+			<ul id="funList">
+				<li>Photography</li>
+				<li>Hiking</li>
+				<li>Playing Tennis</li>
+				<li>Watching sports like football and soccer</li>
+			</ul>
+		</div>
+		<div class="item2">
+			<img class="funIMG" src="../static/yummy.jpeg" alt="gurlf" width="675" height="500">
+		</div>
+		<div class="item3">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/EWPEPNFYEWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>			
+		</div>
+		<div class="item4">
+			<div class="container">
+				<h2>Need Some Advice?</h2>
+				<p id="adviceText">Click the button to get a random piece of advice!</p>
+				<button id="adviceBtn" onclick="getAdvice()">Get Advice</button>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p id="copyYear">designed and coded by Husain Raja &copy;</p>
+	</footer>
+</body>
+</html>
